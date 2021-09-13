@@ -19,4 +19,13 @@ class View
     puts "What is the animal's name?"
     return gets.chomp
   end
+
+  def ask_for_animal_index
+    puts 'Which animal would you like to adopt? Key in the index number.'
+    return gets.chomp.to_i
+  end
+
+  def adopted_animal(animal)
+    puts "Thank you! Please take care of #{animal}!"
+  end
 end

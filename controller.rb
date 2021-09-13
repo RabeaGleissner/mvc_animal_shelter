@@ -15,4 +15,10 @@ class Controller
     animal = Animal.new(type, name)
     @register.add(animal)
   end
+
+  def adopt
+    @view.list_all_animals(@register.all)
+    index = @view.ask_for_animal_index
+    @view.adopted_animal(@register.adopt(index).name)
+  end
 end
