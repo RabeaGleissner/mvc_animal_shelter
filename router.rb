@@ -26,6 +26,7 @@ class Router
     case action
     when "1" then @controller.show
     when "2" then @controller.rescue
+    # implement option 3 if you fancy! :)
     else
       puts "\nPlease choose a valid option!"
     end
