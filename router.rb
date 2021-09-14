@@ -3,7 +3,7 @@ class Router
     @controller = controller
   end
 
-  def run 
+  def run
     loop do
       display_options
       action = gets.chomp
@@ -26,7 +26,7 @@ class Router
     case action
     when "1" then @controller.show
     when "2" then @controller.rescue
-    # implement option 3 if you fancy! :)
+    when "3" then @controller.adopt
     else
       puts "\nPlease choose a valid option!"
     end
