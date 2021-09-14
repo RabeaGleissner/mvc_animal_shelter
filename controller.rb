@@ -19,6 +19,7 @@ class Controller
   def adopt
     @view.list_all_animals(@register.all)
     index = @view.ask_for_animal_index
-    @view.adopted_animal(@register.adopt(index).name)
+    adopted_animal = @register.adopt(index)
+    @view.adopted_animal(adopted_animal.name)
   end
 end

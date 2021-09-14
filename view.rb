@@ -25,7 +25,7 @@ class View
     return gets.chomp.to_i
   end
 
-  def adopted_animal(animal)
+  def adoption_thank_you_message(animal)
     puts "Thank you! Please take care of #{animal}!"
   end
 end
